@@ -15,6 +15,10 @@ inputs:
     required: false
     default: "./dist"
 
+outpus:
+  website-url:
+    description: "The URL of the deployed website"
+
 runs:
   using: "node16"
   # pre: "pre.js"
