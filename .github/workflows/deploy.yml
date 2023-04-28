@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         uses: ./.github/actions/cached-deps/
         with:
-          skip-cache: "true"
+          caching: "false"
       - name: Build website
         run: npm run build
       - name: Upload artifacts
