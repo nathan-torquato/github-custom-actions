@@ -2,6 +2,19 @@ name: "Deploy to S3"
 
 description: "Deploy the website to S3"
 
+inputs:
+  bucket:
+    description: "The name of the bucket to deploy to"
+    required: true
+  region:
+    description: "The AWS region to deploy to"
+    required: false
+    default: "us-east-1"
+  dist-folder:
+    description: "The folder to deploy"
+    required: false
+    default: "./dist"
+
 runs:
   using: "node16"
   # pre: "pre.js"
